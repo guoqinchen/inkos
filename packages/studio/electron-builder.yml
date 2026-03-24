@@ -1,0 +1,45 @@
+appId: com.actalk.inkos-studio
+productName: InkOS Studio
+copyright: Copyright © 2026 Actalk
+
+directories:
+  output: release
+  buildResources: resources
+
+files:
+  - dist/**/*
+  - package.json
+  - "!node_modules/**/*"
+
+extraMetadata:
+  main: dist/main/index.js
+
+mac:
+  category: public.app-category.productivity
+  target:
+    - format: dmg
+      arch: x64
+      target: latest
+    - format: dmg
+      arch: arm64
+      target: latest
+  artifactName: "${productName}-${version}-${arch}.${ext}"
+
+win:
+  target:
+    - format: nsis
+      arch: x64
+  artifactName: "${productName}-${version}-setup.${ext}"
+
+linux:
+  category: Office
+  target:
+    - format: AppImage
+      arch: x64
+  artifactName: "${productName}-${version}.${ext}"
+
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  installerIcon: resources/icon.svg
+  uninstallerIcon: resources/icon.svg

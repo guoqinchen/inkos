@@ -1,0 +1,417 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1774284224303,
+  "projectRoot": "/Users/gq/inkos",
+  "techStack": {
+    "languages": [
+      {
+        "name": "JavaScript/TypeScript",
+        "version": ">=20.0.0",
+        "confidence": "high",
+        "markers": [
+          "package.json"
+        ]
+      },
+      {
+        "name": "TypeScript",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "tsconfig.json"
+        ]
+      }
+    ],
+    "frameworks": [],
+    "packageManager": "pnpm",
+    "runtime": "Node.js 20.0.0"
+  },
+  "build": {
+    "buildCommand": "pnpm build",
+    "testCommand": "pnpm test",
+    "lintCommand": "pnpm lint",
+    "devCommand": "pnpm dev",
+    "scripts": {
+      "build": "pnpm -r build",
+      "dev": "pnpm -r dev",
+      "test": "pnpm -r test",
+      "lint": "pnpm -r lint",
+      "typecheck": "pnpm -r typecheck",
+      "verify:publish-manifests": "node scripts/verify-no-workspace-protocol.mjs packages/core packages/cli",
+      "release": "pnpm build && pnpm test"
+    }
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": null
+  },
+  "structure": {
+    "isMonorepo": true,
+    "workspaces": [],
+    "mainDirectories": [
+      "assets",
+      "scripts"
+    ],
+    "gitBranches": {
+      "defaultBranch": "master",
+      "branchingStrategy": null
+    }
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "assets": {
+      "path": "assets",
+      "purpose": "Static assets",
+      "fileCount": 6,
+      "lastAccessed": 1774284224287,
+      "keyFiles": [
+        "inkos-text.svg",
+        "logo.svg",
+        "screenshot-chapters.png",
+        "screenshot-pipeline.png",
+        "screenshot-state.png"
+      ]
+    },
+    "packages": {
+      "path": "packages",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1774284224287,
+      "keyFiles": []
+    },
+    "scripts": {
+      "path": "scripts",
+      "purpose": "Build/utility scripts",
+      "fileCount": 4,
+      "lastAccessed": 1774284224289,
+      "keyFiles": [
+        "prepare-package-for-publish.mjs",
+        "restore-package-json.mjs",
+        "set-package-versions.mjs",
+        "verify-no-workspace-protocol.mjs"
+      ]
+    },
+    "skills": {
+      "path": "skills",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1774284224289,
+      "keyFiles": [
+        "SKILL.md"
+      ]
+    },
+    "test-project": {
+      "path": "test-project",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1774284224289,
+      "keyFiles": [
+        "inkos.json"
+      ]
+    }
+  },
+  "hotPaths": [
+    {
+      "path": "packages/studio/package.json",
+      "accessCount": 11,
+      "lastAccessed": 1774332429596,
+      "type": "file"
+    },
+    {
+      "path": "",
+      "accessCount": 8,
+      "lastAccessed": 1774287219015,
+      "type": "directory"
+    },
+    {
+      "path": "packages/studio/src/main/index.ts",
+      "accessCount": 7,
+      "lastAccessed": 1774317633091,
+      "type": "file"
+    },
+    {
+      "path": "packages/studio/src/main/ipc/config.ts",
+      "accessCount": 7,
+      "lastAccessed": 1774332447847,
+      "type": "file"
+    },
+    {
+      "path": "packages/cli/package.json",
+      "accessCount": 6,
+      "lastAccessed": 1774332304998,
+      "type": "file"
+    },
+    {
+      "path": "packages/core/package.json",
+      "accessCount": 6,
+      "lastAccessed": 1774332309191,
+      "type": "file"
+    },
+    {
+      "path": "packages/core/src/llm/provider.ts",
+      "accessCount": 5,
+      "lastAccessed": 1774286661244,
+      "type": "file"
+    },
+    {
+      "path": "packages/studio/tsconfig.json",
+      "accessCount": 5,
+      "lastAccessed": 1774316964523,
+      "type": "file"
+    },
+    {
+      "path": "packages/studio/src/main/ipc/init.ts",
+      "accessCount": 5,
+      "lastAccessed": 1774317614002,
+      "type": "file"
+    },
+    {
+      "path": "packages/studio/src/main/ipc/state.ts",
+      "accessCount": 5,
+      "lastAccessed": 1774332447786,
+      "type": "file"
+    },
+    {
+      "path": "package.json",
+      "accessCount": 4,
+      "lastAccessed": 1774286638273,
+      "type": "file"
+    },
+    {
+      "path": "packages/core/src/pipeline/runner.ts",
+      "accessCount": 4,
+      "lastAccessed": 1774286651764,
+      "type": "file"
+    },
+    {
+      "path": "packages/core/src/index.ts",
+      "accessCount": 4,
+      "lastAccessed": 1774287207980,
+      "type": "file"
+    },
+    {
+      "path": "packages/cli/src/commands/studio.ts",
+      "accessCount": 4,
+      "lastAccessed": 1774287218955,
+      "type": "file"
+    },
+    {
+      "path": "packages/studio/index.html",
+      "accessCount": 4,
+      "lastAccessed": 1774317558871,
+      "type": "file"
+    },
+    {
+      "path": "packages/studio/src/main/ipc/pipeline.ts",
+      "accessCount": 4,
+      "lastAccessed": 1774317614026,
+      "type": "file"
+    },
+    {
+      "path": "tsconfig.json",
+      "accessCount": 4,
+      "lastAccessed": 1774332309250,
+      "type": "file"
+    },
+    {
+      "path": "packages/studio/src/shared/types.ts",
+      "accessCount": 4,
+      "lastAccessed": 1774332429641,
+      "type": "file"
+    },
+    {
+      "path": "packages/studio/vite.config.ts",
+      "accessCount": 4,
+      "lastAccessed": 1774332472207,
+      "type": "file"
+    },
+    {
+      "path": "packages/core/src/agents/writer.ts",
+      "accessCount": 3,
+      "lastAccessed": 1774286460233,
+      "type": "file"
+    },
+    {
+      "path": "packages/cli/src/commands/daemon.ts",
+      "accessCount": 3,
+      "lastAccessed": 1774286638288,
+      "type": "file"
+    },
+    {
+      "path": "packages/core/src/state/manager.ts",
+      "accessCount": 3,
+      "lastAccessed": 1774286638301,
+      "type": "file"
+    },
+    {
+      "path": "packages/core/src/pipeline/agent.ts",
+      "accessCount": 3,
+      "lastAccessed": 1774286638322,
+      "type": "file"
+    },
+    {
+      "path": "packages/core/src/models/state.ts",
+      "accessCount": 3,
+      "lastAccessed": 1774286638360,
+      "type": "file"
+    },
+    {
+      "path": "packages/core/src/pipeline/scheduler.ts",
+      "accessCount": 3,
+      "lastAccessed": 1774286650663,
+      "type": "file"
+    },
+    {
+      "path": "packages/cli/src/utils.ts",
+      "accessCount": 3,
+      "lastAccessed": 1774287218933,
+      "type": "file"
+    },
+    {
+      "path": "packages/studio/src/main/preload.ts",
+      "accessCount": 3,
+      "lastAccessed": 1774316953004,
+      "type": "file"
+    },
+    {
+      "path": "packages/studio/tsconfig.node.json",
+      "accessCount": 3,
+      "lastAccessed": 1774316964499,
+      "type": "file"
+    },
+    {
+      "path": "pnpm-workspace.yaml",
+      "accessCount": 3,
+      "lastAccessed": 1774332318697,
+      "type": "file"
+    },
+    {
+      "path": "README.md",
+      "accessCount": 2,
+      "lastAccessed": 1774286440187,
+      "type": "file"
+    },
+    {
+      "path": "packages/cli/src/commands/write.ts",
+      "accessCount": 2,
+      "lastAccessed": 1774286448598,
+      "type": "file"
+    },
+    {
+      "path": "packages/core/src/models/chapter.ts",
+      "accessCount": 2,
+      "lastAccessed": 1774286448698,
+      "type": "file"
+    },
+    {
+      "path": "packages/core/src",
+      "accessCount": 2,
+      "lastAccessed": 1774286650678,
+      "type": "directory"
+    },
+    {
+      "path": "packages/core/src/models/project.ts",
+      "accessCount": 2,
+      "lastAccessed": 1774287218994,
+      "type": "file"
+    },
+    {
+      "path": "RESEARCH.md",
+      "accessCount": 2,
+      "lastAccessed": 1774287562562,
+      "type": "file"
+    },
+    {
+      "path": "packages/studio/src/renderer/main.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1774313740233,
+      "type": "file"
+    },
+    {
+      "path": "packages/studio/src/renderer/App.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1774313740336,
+      "type": "file"
+    },
+    {
+      "path": "packages/studio/src/renderer/index.css",
+      "accessCount": 2,
+      "lastAccessed": 1774313763838,
+      "type": "file"
+    },
+    {
+      "path": "packages/studio/src/renderer/modules/studio/index.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1774313792428,
+      "type": "file"
+    },
+    {
+      "path": "packages/cli/src/index.ts",
+      "accessCount": 1,
+      "lastAccessed": 1774284441098,
+      "type": "file"
+    },
+    {
+      "path": "packages",
+      "accessCount": 1,
+      "lastAccessed": 1774286324517,
+      "type": "directory"
+    },
+    {
+      "path": "packages/core/src/models/book.ts",
+      "accessCount": 1,
+      "lastAccessed": 1774286334908,
+      "type": "file"
+    },
+    {
+      "path": "test-project/inkos.json",
+      "accessCount": 1,
+      "lastAccessed": 1774286343280,
+      "type": "file"
+    },
+    {
+      "path": "packages/cli/src/commands/status.ts",
+      "accessCount": 1,
+      "lastAccessed": 1774286448625,
+      "type": "file"
+    },
+    {
+      "path": "packages/core/src/agents/writer-parser.ts",
+      "accessCount": 1,
+      "lastAccessed": 1774286448662,
+      "type": "file"
+    },
+    {
+      "path": "packages/core/src/agents/detector.ts",
+      "accessCount": 1,
+      "lastAccessed": 1774286448673,
+      "type": "file"
+    },
+    {
+      "path": "packages/cli/src",
+      "accessCount": 1,
+      "lastAccessed": 1774286448797,
+      "type": "directory"
+    },
+    {
+      "path": "packages/core/src/agents/base.ts",
+      "accessCount": 1,
+      "lastAccessed": 1774286458159,
+      "type": "file"
+    },
+    {
+      "path": "packages/core/src/utils/config-loader.ts",
+      "accessCount": 1,
+      "lastAccessed": 1774286482539,
+      "type": "file"
+    },
+    {
+      "path": "packages/core/src/pipeline",
+      "accessCount": 1,
+      "lastAccessed": 1774286650721,
+      "type": "directory"
+    }
+  ],
+  "userDirectives": []
+}

@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"pnpm run -r build --filter=@actalk/inkos-core 2>&1\"}",
+  "error": "Exit code 1\nScope: 3 of 4 workspace projects\npackages/core build$ tsc --filter=@actalk/inkos-core\npackages/studio build$ tsc -p tsconfig.main.json && tsc -p tsconfig.node.json && vite build --filter=@actalk/inkos-core\npackages/core build: error TS5023: Unknown compiler option '--filter=@actalk/inkos-core'.\npackages/core build: Failed\n/Users/gq/inkos/packages/core:\n ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  @actalk/inkos-core@0.5.1 build: `tsc --filter=@actalk/inkos-core`\nExit status 1",
+  "timestamp": "2026-03-24T06:05:31.674Z",
+  "retry_count": 2
+}
